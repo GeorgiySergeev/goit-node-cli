@@ -6,6 +6,7 @@ const CONTACT_PATH = path.join(__dirname, 'db', 'contacts.json');
 
 const getAllContacts = async () => {
   const data = await fs.readFile(CONTACT_PATH, { encoding: 'utf-8' });
+
   return JSON.parse(data);
 };
 
